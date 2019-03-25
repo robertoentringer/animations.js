@@ -27,7 +27,7 @@ https://danielcwilson.com/tags/web-animations-api/
 
 CDN : 
 ```htlm
-  <script src="https://unpkg.com/animations.js"></script>
+<script src="https://unpkg.com/animations.js"></script>
 ````
 NPM : 
 
@@ -38,7 +38,9 @@ $ npm install animations.js
 ## Usage
 
 ```js
-import animations from "animations.js"
+import { animations } from "animations.js" // es6 module
+//or 
+const animations = window["animations.js"].animations // cdn
 
 const options = {
   iterations: Infinity,
