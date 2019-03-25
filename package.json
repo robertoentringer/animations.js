@@ -1,6 +1,6 @@
 {
   "name": "animations.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Web Animations API based in Animate.css",
   "author": "Roberto Entringer <r.entringer@gmail.com> (https://robertoentringer.com)",
   "license": "MIT",
