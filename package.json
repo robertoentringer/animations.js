@@ -1,0 +1,44 @@
+{
+  "name": "animations.js",
+  "version": "1.0.0",
+  "description": "Web Animations API based in Animate.css",
+  "author": "Roberto Entringer <r.entringer@gmail.com> (https://robertoentringer.com)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "waapi",
+    "transitions",
+    "animations",
+    "web-animations-api",
+    "js"
+  ],
+  "repository": "github:robertoentringer/animations.js",
+  "bugs": {
+    "url": "https://github.com/robertoentringer/animations.js/issues",
+    "email": "r.entringer@gmail.com"
+  },
+  "homepage": "https://github.com/robertoentringer/animations.js",
+  "main": "animations.js",
+  "unpkg": "dist/animations.js",
+  "files": [
+    "animations.js",
+    "dist"
+  ],
+  "scripts": {
+    "lint": "eslint --fix animations.js",
+    "build": "parcel build animations.js --detailed-report --no-source-maps --no-cache --global animations.js"
+  },
+  "bundledDependencies": [],
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "eslint": "^5.15.3",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.16.4"
+  }
+}
