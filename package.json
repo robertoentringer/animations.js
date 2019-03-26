@@ -33,7 +33,7 @@
     "prepublishOnly": "npm run build",
     "preversion": "npm run lint",
     "version": "npm run lint && git add -A src",
-    "postversion": "git push --dry-run && git push --tags --dry-run"
+    "postversion": "git push && git push --tags"
   },
   "bundledDependencies": [],
   "devDependencies": {
