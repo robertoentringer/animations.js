@@ -20,15 +20,20 @@
     "email": "r.entringer@gmail.com"
   },
   "homepage": "https://github.com/robertoentringer/animations.js",
-  "main": "animations.js",
+  "main": "src/animations.js",
   "unpkg": "dist/animations.js",
   "files": [
-    "animations.js",
-    "dist"
+    "src/animations.js",
+    "dist/**/*.js"
   ],
   "scripts": {
-    "lint": "eslint --fix animations.js",
-    "build": "parcel build animations.js --detailed-report --no-source-maps --no-cache --global animations.js"
+    "lint": "eslint --fix src/**",
+    "build": "parcel build src/animations.js --out-dir dist --detailed-report --no-source-maps --no-cache --global animations.js",
+    "prepare": "npm run lint",
+    "prepublishOnly": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run lint && git add -A src",
+    "postversion": "git push --dry-run && git push --tags --dry-run"
   },
   "bundledDependencies": [],
   "devDependencies": {
