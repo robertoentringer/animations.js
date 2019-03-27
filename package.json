@@ -19,19 +19,17 @@
     "url": "https://github.com/robertoentringer/animations.js/issues",
     "email": "r.entringer@gmail.com"
   },
-  "homepage": "https://github.com/robertoentringer/animations.js",
+  "homepage": "https://animations.now.sh",
   "main": "src/animations.js",
+  "module": "src/animations.js",
   "unpkg": "dist/animations.js",
   "files": [
-    "src/animations.js",
     "dist/**/*.js"
   ],
   "scripts": {
-    "lint": "eslint --fix src/**",
+    "lint": "eslint --fix src/**/*.js",
     "build": "parcel build src/animations.js --out-dir dist --detailed-report --no-source-maps --no-cache --global animations.js",
-    "prepare": "npm run lint",
-    "prepublishOnly": "npm run build",
-    "preversion": "npm run lint",
+    "prepack": "npm run lint && npm run build",
     "version": "npm run lint && git add -A src",
     "postversion": "git push && git push --tags"
   },
