@@ -11,17 +11,17 @@ Demo : https://animations.now.sh
 Web Animations API - Web APIs | MDN  
 https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Using_the_Web_Animations_API
 
-Animate.css by Daniel Eden  
-http://daneden.github.io/animate.css
-
-Rachel Nabors - Alice in Web Animation Land  
-https://codepen.io/collection/bpEza/
+Rachel Nabors - Web Animations API resources   
+http://rachelnabors.com/waapi
 
 Css tricks - CSS Animations vs Web Animations API  
 https://css-tricks.com/css-animations-vs-web-animations-api/
 
-Daniel C. Wilson  
+Daniel C. Wilson - Tutorial series on the Web Animations API  
 https://danielcwilson.com/tags/web-animations-api/
+
+Animate.css by Daniel Eden  
+http://daneden.github.io/animate.css
 
 ## Install
 
