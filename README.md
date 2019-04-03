@@ -60,5 +60,4 @@ const play = document.getElementById("ElementToAnimate").animate(keyframes, opti
 
 ## See all available animations in : 
 
-https://github.com/robertoentringer/animations.js/blob/master/animations.js
-
+https://github.com/robertoentringer/animations.js/blob/master/src/animations.js
