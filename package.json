@@ -1,6 +1,6 @@
 {
   "name": "animations.js",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Web Animations API based in Animate.css",
   "author": "Roberto Entringer <r.entringer@gmail.com> (https://robertoentringer.com)",
   "license": "MIT",
@@ -27,7 +27,7 @@
     "dist/**/*.js"
   ],
   "scripts": {
-    "lint": "eslint . --fix",
+    "lint": "eslint src/**/*.js --fix",
     "build": "rollup -c",
     "prepack": "npm run lint && npm run build",
     "version": "npm run lint && git add -A src",
