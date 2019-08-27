@@ -12,20 +12,8 @@ const groups = {
     "jello",
     "heartBeat"
   ],
-  bouncing_entrances: [
-    "bounceIn",
-    "bounceInDown",
-    "bounceInUp",
-    "bounceInLeft",
-    "bounceInRight"
-  ],
-  bouncing_exits: [
-    "bounceOut",
-    "bounceOutDown",
-    "bounceOutUp",
-    "bounceOutLeft",
-    "bounceOutRight"
-  ],
+  bouncing_entrances: ["bounceIn", "bounceInDown", "bounceInUp", "bounceInLeft", "bounceInRight"],
+  bouncing_exits: ["bounceOut", "bounceOutDown", "bounceOutUp", "bounceOutLeft", "bounceOutRight"],
   fading_entrances: [
     "fadeIn",
     "fadeInDown",
@@ -50,43 +38,14 @@ const groups = {
   ],
   flippers: ["flip", "flipInX", "flipOutX", "flipInY", "flipOutY"],
   lightspeed: ["lightSpeedIn", "lightSpeedOut"],
-  rotating_entrances: [
-    "rotateIn",
-    "rotateInDownLeft",
-    "rotateInDownRight",
-    "rotateInUpLeft",
-    "rotateInUpRight"
-  ],
-  rotating_exits: [
-    "rotateOut",
-    "rotateOutDownLeft",
-    "rotateOutDownRight",
-    "rotateOutUpLeft",
-    "rotateOutUpRight"
-  ],
+  rotating_entrances: ["rotateIn", "rotateInDownLeft", "rotateInDownRight", "rotateInUpLeft", "rotateInUpRight"],
+  rotating_exits: ["rotateOut", "rotateOutDownLeft", "rotateOutDownRight", "rotateOutUpLeft", "rotateOutUpRight"],
   specials: ["hinge", "jackInTheBox", "rollIn", "rollOut"],
-  zooming_entrances: [
-    "zoomIn",
-    "zoomInDown",
-    "zoomInUp",
-    "zoomInLeft",
-    "zoomInRight"
-  ],
-  zooming_exits: [
-    "zoomOut",
-    "zoomOutDown",
-    "zoomOutUp",
-    "zoomOutLeft",
-    "zoomOutRight"
-  ],
-  sliding_entrances: [
-    "slideInDown",
-    "slideInUp",
-    "slideInLeft",
-    "slideInRight"
-  ],
+  zooming_entrances: ["zoomIn", "zoomInDown", "zoomInUp", "zoomInLeft", "zoomInRight"],
+  zooming_exits: ["zoomOut", "zoomOutDown", "zoomOutUp", "zoomOutLeft", "zoomOutRight"],
+  sliding_entrances: ["slideInDown", "slideInUp", "slideInLeft", "slideInRight"],
   sliding_exits: ["slideOutDown", "slideOutUp", "slideOutLeft", "slideOutRight"]
-};
+}
 
 const animations = {
   bounce: [
@@ -1015,36 +974,31 @@ const animations = {
   flip: [
     {
       easing: "ease-out",
-      transform:
-        "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg)",
+      transform: "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg)",
       transformOrigin: "center",
       offset: 0
     },
     {
       easing: "ease-out",
-      transform:
-        "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg)",
+      transform: "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg)",
       transformOrigin: "center",
       offset: 0.4
     },
     {
       easing: "ease-in",
-      transform:
-        "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg)",
+      transform: "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg)",
       transformOrigin: "center",
       offset: 0.5
     },
     {
       easing: "ease-in",
-      transform:
-        "perspective(600px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)",
+      transform: "perspective(600px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)",
       transformOrigin: "center",
       offset: 0.8
     },
     {
       easing: "ease-in",
-      transform:
-        "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)",
+      transform: "perspective(600px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg)",
       transformOrigin: "center",
       offset: 1
     }
@@ -1196,10 +1150,7 @@ const animations = {
   ],
   lightSpeedOut: {
     easing: "ease-in",
-    transform: [
-      "translate3d(0, 0, 0) skewX(0deg)",
-      "translate3d(100%, 0, 0) skewX(30deg)"
-    ],
+    transform: ["translate3d(0, 0, 0) skewX(0deg)", "translate3d(100%, 0, 0) skewX(30deg)"],
     transformOrigin: ["center", "center"],
     opacity: [1, 0]
   },
@@ -1379,19 +1330,13 @@ const animations = {
   ],
   rollIn: {
     easing: "ease",
-    transform: [
-      "translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)",
-      "translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg)"
-    ],
+    transform: ["translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg)", "translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg)"],
     transformOrigin: ["center", "center"],
     opacity: [0, 1]
   },
   rollOut: {
     easing: "ease",
-    transform: [
-      "translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg)",
-      "translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)"
-    ],
+    transform: ["translate3d(0, 0, 0) rotate3d(0, 0, 1, 0deg)", "translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg)"],
     transformOrigin: ["center", "center"],
     opacity: [1, 0]
   },
@@ -1497,11 +1442,7 @@ const animations = {
   ///
   zoomOut: {
     easing: "ease",
-    transform: [
-      "scale3d(1, 1, 1)",
-      "scale3d(0.3, 0.3, 0.3)",
-      "scale3d(0, 0, 0)"
-    ],
+    transform: ["scale3d(1, 1, 1)", "scale3d(0.3, 0.3, 0.3)", "scale3d(0, 0, 0)"],
     transformOrigin: ["center", "center", "center"],
     opacity: [1, 0, 0]
   },
@@ -1597,8 +1538,6 @@ const animations = {
       offset: 1
     }
   ]
-};
+}
 
-export { groups, animations };
-
-export default animations;
+export { groups, animations }
