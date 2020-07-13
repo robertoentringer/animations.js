@@ -1,6 +1,6 @@
 {
   "name": "animations.js",
-  "version": "1.0.7",
+  "version": "0.0.0-development",
   "description": "Web Animations API based in Animate.css",
   "author": "Roberto Entringer <r.entringer@gmail.com> (https://robertoentringer.com)",
   "license": "MIT",
@@ -20,26 +20,25 @@
     "email": "r.entringer@gmail.com"
   },
   "homepage": "https://animations.now.sh",
-  "main": "src/animations.js",
-  "module": "src/animations.js",
-  "unpkg": "dist/animations.js",
+  "main": "./src/animations.js",
+  "module": "./src/animations.js",
+  "unpkg": "./dist/animations.js",
   "files": [
-    "dist/**/*.js"
+    "./dist/**/*.js"
   ],
   "scripts": {
     "lint": "eslint src/**/*.js --fix",
     "build": "rollup -c",
-    "prepack": "npm run lint && npm run build",
-    "version": "npm run lint && git add -A src",
-    "postversion": "git push && git push --tags"
+    "semantic-release": "semantic-release"
   },
   "bundledDependencies": [],
   "devDependencies": {
-    "eslint": "^6.2.2",
-    "eslint-config-prettier": "^6.1.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": "^1.18.2",
-    "rollup": "^1.20.2",
-    "rollup-plugin-terser": "^5.1.1"
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5",
+    "rollup": "^2.21.0",
+    "rollup-plugin-terser": "^6.1.0",
+    "semantic-release": "^17.1.1"
   }
 }
