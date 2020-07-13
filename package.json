@@ -27,7 +27,7 @@
     "./dist/**/*.js"
   ],
   "scripts": {
-    "lint": "eslint src/**/*.js --fix",
+    "lint": "eslint ./src/**/*.js --fix",
     "build": "rollup -c",
     "semantic-release": "semantic-release"
   },
